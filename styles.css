@@ -274,20 +274,21 @@ p {
 
 .timeline {
   display: grid;
-  gap: 18px;
-  max-width: 1120px;
+  gap: 22px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 22px;
+  grid-template-columns: 120px 1fr;
+  gap: 26px;
   align-items: center;
-  padding: 24px;
+  min-height: 170px;
+  padding: 34px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .timeline-title {
@@ -299,18 +300,23 @@ p {
 
 .timeline-title h3 {
   margin-bottom: 8px;
+  font-size: 1.45rem;
 }
 
 .timeline-title time {
   flex: 0 0 auto;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   font-weight: 750;
 }
 
+.timeline-item p {
+  font-size: 1.12rem;
+}
+
 .timeline-item img {
-  width: 82px;
-  height: 82px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
 }
 
@@ -318,7 +324,7 @@ p {
 .project-copy span,
 .milestone-grid span {
   color: var(--steel);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 850;
   text-transform: uppercase;
 }
@@ -414,33 +420,198 @@ p {
   padding-left: 2px;
 }
 
-.experience-layout {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(340px, 1.2fr);
-  gap: clamp(28px, 6vw, 72px);
-  max-width: 1180px;
-  margin: 0 auto;
-  align-items: start;
+.project-award {
+  margin: 22px 0 0;
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 750;
 }
 
-.experience-copy {
-  padding-top: 10px;
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.work-list {
+  display: grid;
+  gap: 24px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 42px;
+  align-items: center;
+  padding: 34px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.work-video {
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  background: #101819;
+  border-radius: 14px;
+}
+
+.work-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: contain;
+}
+
+.work-logo {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  align-self: center;
+  overflow: hidden;
+  background: #eef3f1;
+  border-radius: 14px;
+}
+
+.work-logo img {
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 22px;
+}
+
+.connextion-logo {
+  background: #edf2ff;
+  width: 300px;
+  min-height: 0;
+  aspect-ratio: 415 / 351;
+  justify-self: center;
+  align-self: center;
+}
+
+.connextion-logo img {
+  padding: 0;
+  border-radius: 14px;
+  max-height: none;
+}
+
+.mapify-logo img {
+  padding: 0;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.mapify-logo {
+  width: 220px;
+  min-height: 0;
+  aspect-ratio: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.work-copy h3 {
+  font-size: clamp(2rem, 2.7vw, 2.55rem);
+}
+
+.work-copy p,
+.work-copy li {
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+.work-copy > span {
+  font-size: 1.08rem;
+}
+
+.work-copy ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.skills-section {
+  max-width: 1360px;
+  margin: 72px auto 0;
+}
+
+.compact-heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .skill-wall {
   display: grid;
-  grid-template-columns: repeat(5, minmax(88px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(8, 64px);
+  gap: 10px 18px;
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  align-items: center;
 }
 
 .skill-wall img {
   width: 100%;
-  height: 92px;
+  height: 100%;
   object-fit: contain;
-  padding: 18px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+}
+
+.skill-flutter {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.skill-c {
+  grid-column: 1 / 4;
+  grid-row: 3 / 6;
+}
+
+.skill-arduino {
+  grid-column: 9 / 11;
+  grid-row: 1 / 3;
+}
+
+.skill-python {
+  grid-column: 4 / 8;
+  grid-row: 1 / 5;
+}
+
+.skill-opencv {
+  grid-column: 8 / 12;
+  grid-row: 3 / 5;
+}
+
+.skill-firebase {
+  grid-column: 4 / 7;
+  grid-row: 5 / 7;
+}
+
+.skill-inventor {
+  grid-column: 8 / 12;
+  grid-row: 5 / 7;
+}
+
+.skill-autocad {
+  grid-column: 1 / 4;
+  grid-row: 7 / 9;
+}
+
+.skill-ros {
+  grid-column: 4 / 8;
+  grid-row: 7 / 9;
+}
+
+.skill-matlab {
+  grid-column: 8 / 12;
+  grid-row: 7 / 9;
 }
 
 .milestone-grid {
@@ -529,9 +700,13 @@ address a {
 @media (max-width: 980px) {
   .hero,
   .section-grid,
-  .experience-layout,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
   }
 
   .hero {
@@ -557,7 +732,7 @@ address a {
   }
 
   .skill-wall {
-    grid-template-columns: repeat(4, minmax(72px, 1fr));
+    grid-template-rows: repeat(8, 52px);
   }
 }
 
@@ -630,9 +805,41 @@ address a {
     padding: 22px;
   }
 
+  .work-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .work-logo {
+    min-height: 190px;
+  }
+
+  .work-video,
+  .work-video video {
+    min-height: 260px;
+  }
+
+  .work-logo img {
+    max-height: 190px;
+  }
+
+  .mapify-logo {
+    width: 190px;
+    min-height: 0;
+  }
+
+  .connextion-logo {
+    width: 240px;
+    min-height: 0;
+  }
+
+  .work-copy .project-actions {
+    justify-content: flex-start;
+  }
+
   .timeline-item {
-    grid-template-columns: 64px 1fr;
-    padding: 18px;
+    grid-template-columns: 76px 1fr;
+    padding: 22px;
   }
 
   .timeline-title {
@@ -641,12 +848,20 @@ address a {
   }
 
   .timeline-item img {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
   }
 
   .skill-wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 22px;
+  }
+
+  .skill-wall img {
+    grid-column: auto;
+    grid-row: auto;
+    height: 86px;
   }
 
   .site-footer {
