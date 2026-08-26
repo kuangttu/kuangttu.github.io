@@ -422,6 +422,103 @@ p {
   text-transform: uppercase;
 }
 
+.research-section {
+  background: var(--surface);
+  border-top: 1px solid rgba(22, 32, 34, 0.1);
+}
+
+.research-list {
+  display: grid;
+  gap: 20px;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.research-card {
+  display: grid;
+  grid-template-columns: minmax(420px, 42%) minmax(0, 58%);
+  gap: 0;
+  align-items: stretch;
+  overflow: hidden;
+  background: #fbfcfb;
+  border: 1px solid var(--line);
+  border-left: 7px solid var(--forest);
+  border-radius: 12px;
+  box-shadow: 0 16px 34px rgba(22, 32, 34, 0.06);
+}
+
+.research-media {
+  min-height: 430px;
+  background: #101819;
+}
+
+.research-media video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: contain;
+}
+
+.research-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(26px, 4vw, 44px);
+}
+
+.research-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.research-kicker span,
+.research-kicker time {
+  color: var(--steel);
+  font-size: 0.92rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.research-card h3 {
+  margin-bottom: 16px;
+  font-size: clamp(1.6rem, 2.35vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.research-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+
+.research-meta span {
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.research-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.research-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .project-section {
   background: #eef3f1;
 }
@@ -791,6 +888,11 @@ address a {
 }
 
 @media (max-width: 980px) {
+  .site-nav {
+    gap: 14px;
+    font-size: 1.05rem;
+  }
+
   .hero,
   .section-grid,
   .contact-layout {
@@ -817,6 +919,14 @@ address a {
 
   .project-row {
     grid-template-columns: minmax(360px, 42%) minmax(0, 58%);
+  }
+
+  .research-card {
+    grid-template-columns: minmax(340px, 44%) minmax(0, 56%);
+  }
+
+  .research-copy {
+    padding: 30px;
   }
 
   .project-copy {
@@ -884,6 +994,15 @@ address a {
 
   .project-row {
     grid-template-columns: 1fr;
+  }
+
+  .research-card {
+    grid-template-columns: 1fr;
+  }
+
+  .research-media,
+  .research-media video {
+    min-height: 280px;
   }
 
   .project-row img {

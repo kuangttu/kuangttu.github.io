@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/profile.jpg">
     <link rel="icon" type="image/png" href="assets/ucsd.png?v=20260801">
-    <link rel="stylesheet" href="styles.css?v=20260801-older-news">
+    <link rel="stylesheet" href="styles.css?v=20260825-work-vpl-erl">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -24,7 +24,8 @@
       <nav class="site-nav" data-nav>
         <a href="#home">Home</a>
         <a href="#education">Education</a>
-        <a href="#projects">Research & Projects</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Work Experience & Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -64,7 +65,7 @@
             </p>
           </article>
           <article class="news-item">
-            <time datetime="2026-06">Jun 2026</time>
+            <time datetime="2026-03">March 2026</time>
             <p>
               <strong>Research Internship at VPL and ERL</strong>: I will join
               <a href="https://sites.google.com/view/ucsdvpl/member" target="_blank" rel="noopener noreferrer"><strong>Prof. Truong Nguyen</strong></a>'s
@@ -145,10 +146,54 @@
         </div>
       </section>
 
+      <section class="section research-section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Publications</h2>
+        </div>
+        <div class="research-list">
+          <article class="research-card">
+            <div class="research-media">
+              <video autoplay muted loop playsinline controls>
+                <source src="https://blarklee.github.io/DexFuture_official_website/static/results/system10/083f7_label.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="research-copy">
+              <div class="research-kicker">
+                <span>arXiv Preprint</span>
+                <time datetime="2026-06">Jun 2026</time>
+              </div>
+              <h3>DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use</h3>
+              <div class="research-meta">
+                <span>Existential Robotics Laboratory (ERL), Department of ECE</span>
+                <span>UC San Diego</span>
+                <span>PI: Prof. Nikolay Atanasov, Prof. Truong Nguyen</span>
+              </div>
+              <ul>
+                <li>
+                  Developed a hierarchical future-state prediction framework that infers sparse
+                  hand-tool-object targets from egocentric RGB observations and structured geometric
+                  cues, removing the need for privileged future demonstration states during inference.
+                </li>
+                <li>
+                  Designed a horizon-conditioned transformer with structured visuomotor tokenization
+                  and integrated the predicted targets with a physically grounded dexterous control
+                  policy for bimanual manipulation.
+                </li>
+              </ul>
+              <div class="research-actions">
+                <a class="button primary" href="https://arxiv.org/abs/2606.05699" target="_blank" rel="noopener noreferrer" aria-label="Open DexFuture arXiv paper">arXiv</a>
+                <a class="button secondary" href="https://blarklee.github.io/DexFuture_official_website/" target="_blank" rel="noopener noreferrer" aria-label="Open DexFuture project website">Website</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section project-section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Portfolio</p>
-          <h2>Research & Projects</h2>
+          <h2>Selected Projects</h2>
         </div>
         <div class="project-list">
           <article class="project-row">
@@ -296,6 +341,36 @@
           <h2>Work Experience</h2>
         </div>
         <div class="work-list">
+          <article class="work-card">
+            <div class="work-video">
+              <video autoplay muted loop playsinline controls>
+                <source src="https://blarklee.github.io/DexFuture_official_website/static/results/system10/083f7_label.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="work-copy">
+              <span>Mar 2026 - Sep 2026</span>
+              <h3>VPL & ERL: Research Intern</h3>
+              <p>
+                Video Processing Lab (VPL) and Existential Robotics Laboratory (ERL), UC San Diego.
+              </p>
+              <ul>
+                <li>
+                  Contributing to a MISO extension on hierarchical multiresolution submap optimization
+                  for scalable neural implicit SLAM, with an added direction toward vision-language
+                  semantic mapping through compact latent features.
+                </li>
+                <li>
+                  Leading a DexFuture extension that studies task-conditioned future-state prediction
+                  from RGB-D observations, hand-object pose cues, and proprioceptive signals for
+                  dexterous manipulation policy learning.
+                </li>
+              </ul>
+              <div class="project-actions">
+                <a class="button secondary" href="https://sites.google.com/view/ucsdvpl/" target="_blank" rel="noopener noreferrer" aria-label="Open UC San Diego Video Processing Lab website">VPL</a>
+                <a class="button secondary" href="https://erl.ucsd.edu/pages/research.html" target="_blank" rel="noopener noreferrer" aria-label="Open UC San Diego Existential Robotics Laboratory research website">ERL</a>
+              </div>
+            </div>
+          </article>
           <article class="work-card">
             <div class="work-video">
               <video autoplay muted loop playsinline controls>
