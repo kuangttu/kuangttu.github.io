@@ -564,6 +564,15 @@ p {
   object-fit: contain;
 }
 
+.project-gif {
+  display: grid;
+  place-items: center;
+}
+
+.project-gif img {
+  object-fit: contain;
+}
+
 .project-copy {
   display: flex;
   flex-direction: column;

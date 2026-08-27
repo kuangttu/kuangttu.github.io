@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/profile.jpg">
     <link rel="icon" type="image/png" href="assets/ucsd.png?v=20260801">
-    <link rel="stylesheet" href="styles.css?v=20260825-work-vpl-erl">
+    <link rel="stylesheet" href="styles.css?v=20260825-shared-retarget">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -67,10 +67,10 @@
           <article class="news-item">
             <time datetime="2026-03">March 2026</time>
             <p>
-              <strong>Research Internship at VPL and ERL</strong>: I will join
+              <strong>Research Internship at VPL and ERL</strong>: I am working with
               <a href="https://sites.google.com/view/ucsdvpl/member" target="_blank" rel="noopener noreferrer"><strong>Prof. Truong Nguyen</strong></a>'s
-              Video Processing Lab (VPL) as an intern, working on robotic manipulation and pose
-              estimation research, and will also be co-advised by
+              Video Processing Lab (VPL) as a research intern on robotic manipulation and pose
+              estimation research, while also being co-advised by
               <a href="https://natanaso.github.io/" target="_blank" rel="noopener noreferrer"><strong>Prof. Nikolay Atanasov</strong></a>
               in the Existential Robotics Laboratory (ERL).
             </p>
@@ -196,6 +196,41 @@
           <h2>Selected Projects</h2>
         </div>
         <div class="project-list">
+          <article class="project-row">
+            <div class="project-video project-gif">
+              <img src="assets/shared-latent-retarget-one-hand.gif" alt="One-hand retargeting demonstration.">
+            </div>
+            <div class="project-copy">
+              <span>Aug 2026</span>
+              <h3>
+                Shared Latent Space Retarget: Embodiment-Agnostic Hand Retargeting for Dexterous
+                Manipulation Transfer
+              </h3>
+              <div class="project-meta">
+                <span>UC San Diego, Department of Electrical and Computer Engineering</span>
+              </div>
+              <ul>
+                <li>
+                  Built a learned retargeting module that maps human demonstrations and multiple
+                  robot hand embodiments into a shared latent pose space using embodiment-specific
+                  variational autoencoders.
+                </li>
+                <li>
+                  Aligned the latent space with a differentiable forward-kinematics contact loss over
+                  semantic fingertip pairs, reducing reliance on dense joint-to-joint correspondence
+                  or paired human-robot trajectories.
+                </li>
+                <li>
+                  Evaluated retargeting across Shadow, Inspire, and Allegro hands on single-hand and
+                  bimanual dexterous manipulation demonstrations.
+                </li>
+              </ul>
+              <div class="project-actions">
+                <a class="button secondary" href="https://drive.google.com/file/d/18QmfaZ-Ht2dPMdR73M-KBEKa_Vk0yF6d/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Open shared latent space retarget report">Report</a>
+                <a class="button secondary" href="https://drive.google.com/file/d/1MiXLsjYyMVPwKke1_95HfHj3O4D3ONln/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Open shared latent space retarget video">Video</a>
+              </div>
+            </div>
+          </article>
           <article class="project-row">
             <div class="project-video">
               <video autoplay muted loop playsinline controls>
@@ -355,14 +390,19 @@
               </p>
               <ul>
                 <li>
-                  Contributing to a MISO extension on hierarchical multiresolution submap optimization
-                  for scalable neural implicit SLAM, with an added direction toward vision-language
-                  semantic mapping through compact latent features.
+                  Contributing to Language MISO, a journal manuscript in preparation on
+                  multiresolution neural implicit SLAM for scalable scene construction and
+                  vision-language spatial understanding.
                 </li>
                 <li>
-                  Leading a DexFuture extension that studies task-conditioned future-state prediction
-                  from RGB-D observations, hand-object pose cues, and proprioceptive signals for
-                  dexterous manipulation policy learning.
+                  Working on hierarchical submap optimization and compact latent feature
+                  representations that support both geometric reconstruction and open-vocabulary
+                  object grounding.
+                </li>
+                <li>
+                  Leading an independent DexFuture extension that studies task-conditioned
+                  future-state prediction for dexterous manipulation from RGB-D observations,
+                  hand-object pose cues, proprioception, and language instructions.
                 </li>
               </ul>
               <div class="project-actions">
